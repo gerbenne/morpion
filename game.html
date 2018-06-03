@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <h1>Tic - Tac - Toe</h1>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h4>Créer une nouvelle partie</h4>
+              <div class="input-group mb-3">
+                  <input type="text" class="form-control" name="name" id="nameNew" placeholder="Entrer votre pseudo"aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-info" id="new" type="button">Nouvelle Partie</button>
+                    </div>
+              </div>
+            <br><br>
+            <h4>Rejoindre une partie existante</h4>
+              <div class="row">
+                  <div class="col">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" name="name" id="nameJoin" placeholder="Entrer votre pseudo" required>
+                    </div>
+                  </div>
+                  <div class="col">
+             <div class="input-group mb-3">
+              <input type="text" class="form-control" aria-label="Default" name="room" id="room" aria-describedby="inputGroup-sizing-default" placeholder="Entrer l'identifiant de partie" required>
+              </div>
+              </div>
+            </div>
+            <button class="btn btn-outline-info" id="join">Rejoindre le jeu</button>
+        </div>
+      </div>
+    </div>
+      <div class="gameBoard">
+              <h2 id="userHello"></h2>
+              <h3 id="turn"></h3>
+        <table class="center">
+          <tr>
+            <td><button class="tile" id="button_00"></button></td>
+            <td><button class="tile" id="button_01"></button></td>
+            <td><button class="tile" id="button_02"></button></td>
+          </tr>
+          <tr>
+            <td><button class="tile" id="button_10"></button></td>
+            <td><button class="tile" id="button_11"></button></td>
+            <td><button class="tile" id="button_12"></button></td>
+          </tr>
+          <tr>
+            <td><button class="tile" id="button_20"></button></td>
+            <td><button class="tile" id="button_21"></button></td>
+            <td><button class="tile" id="button_22"></button></td>
+          </tr>
+        </table>
+         <div id="info">
+
+         </div>
+    </div>
+
+<div id="tour"class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p>Ce n'est pas votre tour</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="champ"class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p>Ce champ a déjà été joué</p>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<div id="pseudo"class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p>Veuillez entrer un pseudo</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="salon"class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p>Veuillez entrer votre nom et votre identifiant de jeu</p>
+      </div>
+    </div>
+  </div>
+</div>
+   
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
