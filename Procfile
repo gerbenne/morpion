@@ -1,2 +1,1 @@
-web: gunicorn fbapp:app
-web: npm start
+web: pm2 start index.js
