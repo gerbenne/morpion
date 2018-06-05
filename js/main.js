@@ -4,7 +4,7 @@
   let player;
   let game;
 
-  const socket = io.connect('http://localhost');
+  const socket = io.connect('https://morpions.herokuapp.com');
 
   class Player {
     constructor(name, type) {
