@@ -4,7 +4,7 @@
   let player;
   let game;
 
-  const socket = io.connect('http://localhost:5000');
+  const socket = io.connect('http://localhost');
 
   class Player {
     constructor(name, type) {
