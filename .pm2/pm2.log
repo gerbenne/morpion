@@ -1,0 +1,17 @@
+[2018-06-04 17:39:25] PM2 log: ===============================================================================
+[2018-06-04 17:39:25] PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+[2018-06-04 17:39:25] PM2 log: Time                 : Mon Jun 04 2018 17:39:25 GMT+0200 (Paris, Madrid (heure d’été))
+[2018-06-04 17:39:25] PM2 log: PM2 version          : 2.10.4
+[2018-06-04 17:39:25] PM2 log: Node.js version      : 8.10.0
+[2018-06-04 17:39:25] PM2 log: Current arch         : x64
+[2018-06-04 17:39:25] PM2 log: PM2 home             : C:\Users\agerbenne\.pm2
+[2018-06-04 17:39:25] PM2 log: PM2 PID file         : C:\Users\agerbenne\.pm2\pm2.pid
+[2018-06-04 17:39:25] PM2 log: RPC socket file      : \\.\pipe\rpc.sock
+[2018-06-04 17:39:25] PM2 log: BUS socket file      : \\.\pipe\pub.sock
+[2018-06-04 17:39:25] PM2 log: Application log path : C:\Users\agerbenne\.pm2\logs
+[2018-06-04 17:39:25] PM2 log: Process dump file    : C:\Users\agerbenne\.pm2\dump.pm2
+[2018-06-04 17:39:25] PM2 log: Concurrent actions   : 2
+[2018-06-04 17:39:25] PM2 log: SIGTERM timeout      : 1600
+[2018-06-04 17:39:25] PM2 log: ===============================================================================
+[2018-06-04 17:39:52] PM2 log: Starting execution sequence in -fork mode- for app name:index id:0
+[2018-06-04 17:39:52] PM2 log: App name:index id:0 online
